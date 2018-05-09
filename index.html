@@ -1,23 +1,245 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+  <head>
 
-  <h1 class="page-heading">Posts</h1>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <title>Resume - Start Bootstrap Theme</title>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-</div>
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Austen
+            <span class="text-primary">Tucker-Crowder</span>
+          </h1>
+          <div class="subheading mb-5">6121 N. Sheridan Rd #2h · Chicago, IL 60660 · (317) 410-7271 ·
+            <a href="mailto:name@email.com">austen.crowder@gmail.com</a>
+          </div>
+          <div class="subheading mb-5"><a href="/CrowderAustenScrumMaster_Resume.pdf">Download My Resume</a></div>
+         
+          <p class="mb-5">Multitalented scrum master, business analyst, javascript developer, and project manager with eleven years of experience in government, finance, telecom, and housing. She is most at home in environments that allow her to utilize a unique, out-of-the-box skillset as techie, teacher, servant leader, and creative person to devise elegant solutions to inelegant problems.</p>
+            <li>Complete agile and waterfall software development lifecycle experience in tightly regulated business and government environments</li>
+            <li>Agile coach and mentor for multiple teams with both remote and on-site members</li>
+            <li>Planning messaging, approach, and market strategy for proposals, software demonstrations, and team presentations with C-suite executives, SMEs and other stakeholders</li>
+            <li>Generating documentation including user stories, use cases, gap analyses, business needs assessments, test plans, training materials, and helpdesk documentation</li>
+            <li>Tracking software: Google Analytics, Hotjar, Datadog, Grafana</li>
+            <li>Google Analytics IQ certified</li>
+            <li>Work Tracking software: Jira, Confluence, Trello</li>
+            <li>CSM</li>
+
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/austen-crowder/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/austencrowder">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Scrummaster and Project Lead</h3>
+              <div class="subheading mb-3">Guaranteed Rate</div>
+              <p>Scrummaster for multiple, autonomous backend development teams working in postgres, redis, angular, clojure, and bootstrap. Mentored developers in requirements gathering, process, and stakeholder management.</p>
+                <p><span class="text-primary">Proudest Moment:</span> Training up a business stakeholder in Agile practices to both act as product owner and improve the relationship between business and developers.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">November 2015 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Business Analyst and Project Manager</h3>
+              <div class="subheading mb-3">Chicago Housing Authority</div>
+              <p>Senior Business Analyst and Scrum Master for a small, in-house .NET development team. The Chicago Housing Authority is the largest renter in the city of Chicago; applications created and maintained for the authority aided business users in tracking over 30,000 participants and 250,000 waitlist participants in multiple programs in a highly regulated environment.</p>
+               <p><span class="text-primary">Proudest Moment:</span> Introducing Kanban to developers with a whiteboard from a storage closet, and in doing so reduce turn times by 75%.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">October 2012 - October 2015</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Business Analyst</h3>
+              <div class="subheading mb-3">Technology Partnership Group</div>
+              <p>Discovered patterns, gaps, and creative solutions to problems that arose in implementations of EnABLE, a municipal loan and bond management system. Became a SME on complex Clean Water Act financial programs. Team worked within Agile environment to quickly establish goals, requirements, and development in accelerated time frames. Current implementations of EnABLE handle loan portfolios more than $300M apiece.</p>
+                <p><span class="text-primary">Proudest Moment:</span> Identifying a product enhancement through user interviews and relationships that was impactful enough to allow a state government to skip its official procurement process.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2009 - September 2012</span>
+            </div>
+          </div>
+
+        </div>
+
+        </section>
+
+        
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-clojure"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jira"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-angular"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-trello"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              REPL-driven development</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </section>        
+        
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Wabash College</h3>
+              <div class="subheading mb-3">Bachelor of Arts</div>
+              <div>English / Teacher Education</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Outside of work I am a published novelist whose books are available on Amazon</p>
+            <p>I also volunteer my time as a mentor and activist for transgender members of the LGBTQ community. In another life I worked for an LGBT news association as a columnist, where my only claim to fame was being <a href="http://bilerico.lgbtqnation.com/2010/03/the_trans_mafia_stifles_allies.php">read and recommended</a> (once) by <a href="https://www.advocate.com/arts-entertainment/television/2012/02/21/dan-savage-hits-national-tv-strikes-back-critics">Dan Savage.</a></p>
+            <p class="mb-0">I love tinkering on retro arcade projects and will never, ever turn down an invitation to play pinball.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
